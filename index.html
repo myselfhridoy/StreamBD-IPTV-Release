@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamBD IPTV - V1.0</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Glassmorphism Style */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+        }
+    </style>
+</head>
+<body class="text-white font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-6 py-20 text-center">
+        <div class="inline-block p-4 rounded-full bg-blue-500/10 mb-4">
+            <i class="fas fa-rocket text-4xl text-blue-400"></i>
+        </div>
+        <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">StreamBD IPTV</span> - V1.0
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Welcome to the very first release! A premium, unified streaming experience built from the ground up for both <strong>Android Mobile</strong> and <strong>Android TV / TV Boxes</strong>.
+        </p>
+        
+        <!-- Download Button -->
+        <!-- Note: Replace the href link with your actual direct APK download link from GitHub releases -->
+        <a href="https://github.com/myselfhridoy/StreamBD-IPTV-Release/releases/download/v1.0/streamBD-iptv-v1.apk" 
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] hover:-translate-y-1">
+            <i class="fas fa-download text-xl"></i>
+            <span>Download APK</span>
+        </a>
+    </header>
+
+    <!-- Features Section -->
+    <main class="container mx-auto px-6 py-12 flex-grow">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold inline-block border-b-2 border-blue-500 pb-2">✨ Key Features</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Feature 1 -->
+            <div class="glass-card p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-blue-400 mb-4"><i class="fas fa-tv text-3xl"></i></div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Universal Platform Support</h3>
+                <ul class="text-gray-300 space-y-2 text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Mobile & TV Ready:</strong> A single APK that adapts its UI perfectly whether you are using a touchscreen phone or a D-Pad remote.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Premium UI/UX:</strong> Built with Jetpack Compose, featuring beautiful glassmorphism effects, smooth animations, and a sleek dark theme.</li>
+                </ul>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="glass-card p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-purple-400 mb-4"><i class="fas fa-satellite-dish text-3xl"></i></div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Advanced Live TV Engine</h3>
+                <ul class="text-gray-300 space-y-2 text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Robust Playlist Parsing:</strong> Supports M3U, PLS, and JSON formats.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>DRM Support:</strong> Widevine, ClearKey, and PlayReady encrypted channels.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Dynamic Stream Bypasses:</strong> Automatically resolves complex tokens under the hood.</li>
+                </ul>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="glass-card p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-pink-400 mb-4"><i class="fas fa-film text-3xl"></i></div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Movies & TV Series (VOD)</h3>
+                <ul class="text-gray-300 space-y-2 text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>TMDB Integration:</strong> Rich metadata including backdrops, cast, genres, and organized seasons/episodes.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Dynamic Addon System:</strong> Remote updates via external JavaScript engine (QuickJS) without needing an app update!</li>
+                </ul>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="glass-card p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-red-400 mb-4"><i class="fas fa-play-circle text-3xl"></i></div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Powerful Video Player (ExoPlayer)</h3>
+                <ul class="text-gray-300 space-y-2 text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Picture-in-Picture (PiP):</strong> Keep watching while using other apps (Mobile).</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Aspect Ratio Control:</strong> Toggle Fit, Stretch, and Zoom modes easily.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Track Selection:</strong> Switch audio tracks & video qualities on the fly.</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Custom TV Controls:</strong> Auto-hiding, remote-friendly interface.</li>
+                </ul>
+            </div>
+
+            <!-- Feature 5 (Full Width) -->
+            <div class="glass-card p-8 rounded-2xl md:col-span-2 hover:-translate-y-1 transition-transform duration-300">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="text-yellow-400"><i class="fas fa-sync-alt text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-white">In-App Auto Updates</h3>
+                </div>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    No need to check for updates manually! The app will notify you when a new release is available on GitHub and allow you to download and install it directly from within the app. You can also manually check for updates from the Side Drawer.
+                </p>
+            </div>
+        </div>
+
+        <!-- Installation Section -->
+        <div class="max-w-3xl mx-auto mt-20 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 inline-block border-b-2 border-blue-500 pb-2 flex justify-center mx-auto">⚙️ Installation Guide</h2>
+            <div class="glass-card p-8 rounded-2xl">
+                <ol class="list-decimal list-inside text-gray-300 space-y-4 text-lg">
+                    <li>Download the <code class="bg-gray-800 text-blue-300 px-2 py-1 rounded text-sm font-mono border border-gray-700">streamBD-iptv-v1.apk</code> file from the download button above.</li>
+                    <li>Transfer it to your Android TV or open it directly on your Mobile device.</li>
+                    <li>If prompted, allow installation from <strong>"Unknown Sources"</strong> in your settings.</li>
+                    <li>Launch the app and enjoy premium streaming! 🎉</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 mt-auto py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 StreamBD IPTV. Built with ❤️ for Android.</p>
+    </footer>
+
+</body>
+</html>
